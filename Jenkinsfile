@@ -34,6 +34,11 @@ pipeline {
         }
       }
     }
+    stage('checkpoint') {
+      steps {
+        checkpoint 'Checkpoint'
+      }
+    }
   }
   environment {
     MY_NAME = 'Mary'
